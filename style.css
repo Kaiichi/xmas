@@ -1,0 +1,317 @@
+@font-face {
+font-family: "Miraculous&Christmas";
+src: url('Miraculous&Christmas.ttf');
+}
+@font-face {
+font-family: "Good Morning";
+src: url('Good Morning.ttf');
+}
+@font-face {
+font-family: "Reality Sunday";
+src: url('Reality Sunday.ttf');
+}
+body {
+background-color: #173B0B;
+font-family: "Comic Sans MS";
+}
+.index a {
+text-decoration: none;
+color: black;
+font-size: 20px;
+}
+header {
+background-color: #610B0B;
+width: 98%;
+height: 150px;
+box-shadow: 6px 6px 6px black;
+margin-left: 1%;
+margin-top: 1%
+}
+#menu-demo2, #menu-demo2 ul {
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+}
+#menu-demo2 li {
+display: inline-block;
+position: relative;
+border-radius: 8px 8px 0 0;
+width: 16%;
+}
+#menu-demo2 ul li {
+display: inherit;
+border-radius: 0;
+width: 100%
+}
+#menu-demo2 ul li:hover {
+border-radius:0;
+}
+#menu-demo2 ul li:last-child {
+border-radius: 0 0 8px 8px;
+}
+#menu-demo2 ul {
+position: absolute;
+max-height: 0;
+left: 0;
+right: 0;
+overflow: hidden;   /* Cela fait disparaitre les sous menus */
+transition: .8s all .3s; /*Tant d'apparitions des sous menus*/
+}
+#menu-demo2 li:hover ul {
+max-height: 15em;
+}
+/* background des menus */
+#menu-demo2 li:first-child {
+background-color: #243B0B;
+background-image: linear-gradient(to bottom, #38610B 0%, #1B2A0A 100%);/*Dégradé de couleurs    */
+}
+#menu-demo2 li:nth-child(2) {
+background-color: #8A0808;
+background-image: linear-gradient(to bottom, #B40404 0%, #610B0B 100%);
+}
+#menu-demo2 li:nth-child(3) {
+background-color: #243B0B;
+background-image: linear-gradient(to bottom, #38610B 0%, #1B2A0A 100%);
+}
+#menu-demo2 li:last-child {
+background-color: #8A0808;
+background-image: linear-gradient(to bottom, #B40404 0%, #610B0B 100%);
+}
+/* background sous menus */
+#menu-demo2 li:first-child li {
+background: #243B0B;
+}
+#menu-demo2 li:nth-child(2) li {
+background: #8A0808;
+}
+#menu-demo2 li:nth-child(3) li {
+background: #243B0B;
+}
+#menu-demo2 li:last-child li {
+background: #8A0808;
+}
+/* background menus et sous menus au hover(Quand la souris passe dessus) */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover {
+background: #243B0B;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover {
+background: #8A0808;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover {
+background: #243B0B;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover {
+background: #8A0808;
+}
+/* les a href */
+#menu-demo2 a {
+text-decoration: none;
+display: block;
+padding: 8px 32px;
+color: #fff;
+font-family:arial;
+}
+#menu-demo2 ul a {
+padding: 8px 0;
+}
+#menu-demo2 li:hover li a {
+color: #fff;
+text-transform: inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a {
+color: #000;
+}   
+footer {
+background-color: black;
+width: 98%;
+height: 150px;
+box-shadow: 6px 6px 6px black;
+margin-left: 1%;
+margin-top: 100%;
+}
+.image {
+	background: darkgreen;
+	width: 65%;
+	height: 500px;
+	margin-left: 5px;
+	margin-top: 10px;
+	box-shadow: 6px 6px 6px black;
+	border-radius: 10px;
+	float: right;
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+}
+.mColonneRight {
+	display: block;
+	width: 25%;
+	height: 400px;
+	background-color: darkred;
+	border-radius: 20px;
+	box-shadow: 6px 6px 6px black;
+	margin-top: 2%;
+	margin-right: 5px;
+	float: left;
+}
+.link-with-popup {
+	position: relative;
+	z-index: 100;
+	margin-bottom: 10px;
+	font: normal 11px tahoma;
+}
+.link-with-popup:hover {
+	z-index: 200;
+}
+.link {
+	background: #E0EAF1;
+	padding: 10px 20px;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 10px;
+	background: #8A2908;
+}
+.link:hover {
+	background: #c4dae9;
+}
+.link:active + .popup {
+	display: block;
+}
+.popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	bottom: 0;
+	display: none;
+}
+.popup:hover {
+	display: block;
+	background: darkgreen;
+}
+.popup {
+	position: absolute;
+	top: 0;
+	left: 130px;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	padding: 10px 20px;
+	margin-right: 5%;
+	margin-top: 10%;
+	padding-top: 
+}
+.box {
+	margin-right: ;
+	margin-top: ;
+}
+.cg {
+width: 40%;
+height: 600px;
+box-shadow: 6px 6px 6px black;
+margin-left: 2%;
+margin-top: 3%;
+border-radius: 2%;
+background-color: darkgreen; 
+float: left;
+}
+.cd1 {
+display: block;
+background-color: darkgreen;
+width: 30%;
+height: 300px;
+box-shadow: 6px 6px 6px black;
+border-radius: 10%;
+margin-top: 3%;
+margin-right: 12%;
+float: right;
+}
+.cd2 {
+display: block;
+background-color: darkgreen;
+width: 30%;
+height: 300px;
+box-shadow: 6px 6px 6px black;
+border-radius: 10%;
+margin-top: 10%;
+margin-right: 12%;
+float: right;
+}
+#saisieMots {
+	float: left;
+	width: 45%;
+}
+#texte ul {
+	list-style-type: none;
+	margin: 0
+}
+#texte li {
+	line-height: 2em;
+	text-transform: uppercase; /* EN MAJ A EDIT SI BESOIN*/
+	margin-top: 8px;
+}
+#texte input[type=text] {
+	border-width: 0 0 4px 0;
+	border-color: #333;
+	background: darkred;
+}
+#texte #divBouton {
+	text-align: center;
+	width: 10%;
+	margin-left: 45%
+}
+#texte #btnRemplacer {
+	width: 200px;
+}
+#divHistoire {
+	margin-top: 3%;
+	margin-right: 3%;
+	width: 45%;
+	border: 1px dashed black;
+	padding: 8px;
+	float: right;
+	box-shadow: 6px 6px 6px black;
+	background: #122A0A;
+}
+.remplacement {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+#texte {
+	background: darkred;
+	width: 30%;
+	height: 600px;
+	margin-top: 3%;
+	margin-left: 3%;
+	border-radius: 10px;
+	float: left;
+	box-shadow: 6px 6px 6px black;
+}
+.monBeauSapin {
+	background: pink;
+	width: 30%;
+	height: 30%;
+	border-radius: 10px;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	box-shadow: 6px 6px 6px black;
+	text-align: center;
+}
+.petitPapaNoel {
+	background: pink;
+	width: 30%;
+	height: 30%;
+	border-radius: 10px;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	box-shadow: 6px 6px 6px black;
+	text-align: center;
+}
+.lsv a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
