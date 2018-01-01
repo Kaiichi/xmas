@@ -319,3 +319,17 @@ footer {
 	background-color: black;
 	font-family: Reality Sunday;
 }
+.im {
+	height: 250px;
+	width: 250px;
+	padding-top: 5%;
+	position: inherits;
+}
+.im:hover {
+	transition: 6s;
+	height: 400px;
+	width: 600px;
+	padding-top: 10%;
+	padding-left: 100%;
+	
+}
