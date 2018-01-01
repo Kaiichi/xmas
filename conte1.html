@@ -60,24 +60,17 @@
     </div>
     	<div id="divHistoire"></div>	
         <script type="text/javascript">
-        	document.getElementById("btnRemplacer").onclick = fRemplacer
-
-        	function fRemplacer() {
-        		var divHistoire = document.getElementById("divHistoire");
-        		var vSalutation ="<span class='remplacement'>" + document.getElementById("salutation").value + "</span>";
-        		var vmotsAffection ="<span class='remplacement'>" + document.getElementById("motsAffection").value + "</span>";
-        		var vMotSante ="<span class='remplacement'>" + document.getElementById("motSante").value + "</span>";
-        		var vJoyeux ="<span class='remplacement'>" + document.getElementById("joyeux").value + "</span>";
-        		var vBisou ="<span class='remplacement'>" + document.getElementById("bisou").value + "</span>";
-        		var vHistoire = "<h1>Carte de Noël</h1>";
-        		vHistoire += "Nous sommes tous réunis autour de cette carte pour poser quelques mots amicaux, sincères et affectueux.<br><br>";
-        		vHistoire += "Nous commencerons donc par un classique " + vSalutation + ",<br>Coninuerons par un amical " + vmotsAffection + ",<br><br>";
-        		vHistoire += "Il en suivra un sincère " + vMotSante +",<br><br>";
-        		vHistoire += "Et nous terminerons par un classique mais mémorable : <br><br>" + vJoyeux + "<br><br>";
-        		vHistoire += "Sans oublier un affectueux " + vBisou + "!";
-
-        		divHistoire.innerHTML = vHistoire;
-        	}
+        	document.getElementById("btnRemplacer").onclick = fRemplacer;
+			const spanRemplacement = (id) => `<span class='remplacement'>${document.getElementById(id).value}</span>`  
+			
+			function fRemplacer() {
+				let divHistoire = document.getElementById("divHistoire");
+				divHistoire.innerHTML = `<h1>Carte de Noël</h1>Nous sommes tous réunis autour de cette carte pour poser quelques mots amicaux, sincères et affectueux.<br><br>
+				Nous commencerons donc par un classique ${spanRemplacement('salutation')},<br>Continuerons par un amical ${spanRemplacement('motsAffection')},<br><br>
+				Il en suivra un sincère ${spanRemplacement('MotSante')},<br><br>
+				Et nous terminerons par un classique mais mémorable : <br><br>${spanRemplacement('joyeux')}<br><br>
+				Sans oublier un affectueux ${spanRemplacement('bisou')} !`;
+			}
         </script>
     </body>
     <footer>
