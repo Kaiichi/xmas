@@ -8,6 +8,6 @@ Ceci est le site de Noël pour mon projet pédagogique
         - Du css 
         - Avec un thème spécifique
 - Enfin pour les plus débrouillards il est conseiller de faire un peu plus de pages !
-ATTENTION NEXT UPDATE !!
+-ATTENTION NEXT UPDATE !!
 For the next update, all the files with number will be deleted. So the JS will be very important for the site
 The site will be upload on e php server for do somethings :). Thanks !
