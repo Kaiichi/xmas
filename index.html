@@ -4,40 +4,41 @@
         <meta charset="utf-8">
         <title>Merry Chrismas</title>
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <!--*****************************Le Menu déroulant**********************************-->
     <header>
         <ul id="menu-demo2">
             <li><a href="#">Paysage</a>
                 <ul>
-                    <li><a href="paysage1.html">Enneiger</a></li>
-                    <li><a href="paysage2.html">Chaleureux</a></li>
-                    <li><a href="paysage3.html">Sapins</a></li>
-                    <li><a href="paysage4.html">Montagne</a></li>
+                    <li><a href="#"><span onclick="show_hidden('paysage');">Enneiger</span></a></li>
+                    <li onclick="javascript:show_hidden('P2');"><a href="#">Chaleureux</a></li>
+                    <li onclick="javascript:show_hidden('P3');"><a href="#">Sapins</a></li>
+                    <li onclick="javascript:show_hidden('P4');"><a href="#">Montagne</a></li>
                 </ul>
             </li>
             <li><a href="#">Noël</a>
                 <ul>
-                    <li><a href="no%C3%ABl1.html">Cadeau</a></li>
-                    <li><a href="no%C3%ABl2.html">Bûche de Noël</a></li>
-                    <li><a href="no%C3%ABl3.html">Père Noël</a></li>
+                    <li onclick="javascript:show_hidden('N1');"><a href="#">Cadeau</a></li>
+                    <li onclick="javascript:show_hidden('N2');"><a href="#">Bûche de Noël</a></li>
+                    <li onclick="javascript:show_hidden('N3');"><a href="#">Père Noël</a></li>
                     <li><a href="#">...</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contes & champs</a>
+            <li><a href="#">Contes & Chants</a>
                 <ul>
-                    <li><a href="conte1.html">Histoire à écrire :)</a></li>
-                    <li><a href="conte2.html">Conte de Noël</a></li>
-                    <li><a href="conte3.html">Champs de Noël</a></li>
-                    <li><a href="#">...</a></li>
+                    <li onclick="javascript:show_hidden('C1');"><a href="#">Histoire à écrire :)</a></li>
+                    <li onclick="javascript:show_hidden('C2');"><a href="#">Conte de Noël</a></li>
+                    <li onclick="javascript:show_hidden('C3');"><a href="#">Champs de Noël</a></li>
+                    <li ><a href="#">...</a></li>
                 </ul>
             </li>
             <li><a href="#">Petits Jeux & Autres</a>
                 <ul>
-                    <li><a href="jeux1.html">Liste de Noël</a></li>
-                    <li><a href="jeux2.html">Compte à Rebours</a></li>
-                    <li><a href="index.html">Menu</a></li>
-                    <li><a href="jeux4.html">Recettes de Noël</a></li>
+                    <li onclick="javascript:show_hidden('J1');"><a href="#">Liste de Noël</a></li>
+                    <li onclick="javascript:show_hidden('J2');"><a href="#">Compte à Rebours</a></li>
+                    <li onclick="javascript:show_hidden('J3');"><a href="#">Menu</a></li>
+                    <li onclick="javascript:show_hidden('J4');"><a href="#">Recettes de Noël</a></li>
                 </ul>
             </li>
         </ul>
@@ -70,6 +71,7 @@
             </div>
         </div>
     <!--******************** Les images 1 ***********************************-->
+    <div id="PE1" style="visibility: hidden;">
         <img src="img/sapin.png" class="" title="Sapin">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -78,6 +80,7 @@
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
+    </div>
     <!--******************** Les images 2 ***********************************-->
         <img src="img/sapin.png" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -234,17 +237,20 @@
     <!--********************** Jeux 4 *******************************************-->
 
     <!--*********************** JAVA SCRIPT *************************************-->
-    <script type="text/javascript">
-    /** ************************* JS conte 1 ******************/
-        document.getElementById("btnRemplacer").onclick = fRemplacer;
-        const spanRemplacement = (id) => `<span class='remplacement'>${document.getElementById(id).value}</span>`  
-        
-        function fRemplacer() {
-            let divHistoire = document.getElementById("divHistoire");
-            divHistoire.innerHTML = `<h1>Carte de Noël</h1>Nous sommes tous réunis autour de cette carte pour poser quelques mots amicaux, sincères et affectueux.<br><br>
-            Nous commencerons donc par un classique ${spanRemplacement('salutation')},<br>Continuerons par un amical ${spanRemplacement('motsAffection')},<br><br>
-            Il en suivra un sincère ${spanRemplacement('MotSante')},<br><br>
-            Et nous terminerons par un classique mais mémorable : <br><br>${spanRemplacement('joyeux')}<br><br>
-            Sans oublier un affectueux ${spanRemplacement('bisou')} !`;
-        }
-    </script>
+        <script type="text/javascript">
+        /** ************************* JS conte 1 ******************/
+            document.getElementById("btnRemplacer").onclick = fRemplacer;
+            const spanRemplacement = (id) => `<span class='remplacement'>${document.getElementById(id).value}</span>`  
+            
+            function fRemplacer() {
+                let divHistoire = document.getElementById("divHistoire");
+                divHistoire.innerHTML = `<h1>Carte de Noël</h1>Nous sommes tous réunis autour de cette carte pour poser quelques mots amicaux, sincères et affectueux.<br><br>
+                Nous commencerons donc par un classique ${spanRemplacement('salutation')},<br>Continuerons par un amical ${spanRemplacement('motsAffection')},<br><br>
+                Il en suivra un sincère ${spanRemplacement('MotSante')},<br><br>
+                Et nous terminerons par un classique mais mémorable : <br><br>${spanRemplacement('joyeux')}<br><br>
+                Sans oublier un affectueux ${spanRemplacement('bisou')} !`;
+            }
+            show_hidden('paysage');
+        </script>
+    </body>
+</html>

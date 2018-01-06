@@ -1,3 +1,7 @@
+body {
+    background-color: #173b0b;
+    font-family: "Comic Sans MS";
+}
 /** ******************* Les polices ******************************************* **/
 @font-face {
     font-family: "Miraculous&Christmas";
@@ -12,6 +16,14 @@
     src: url('Reality Sunday.ttf');
     }
 /** **************************** Menu de navigation *************************/
+header {
+    background-color: #610B0B;
+    width: 98%;
+    height: 150px;
+    box-shadow: 6px 6px 6px black;
+    margin-left: 1%;
+    margin-top: 1%;
+}
 #menu-demo2, #menu-demo2 ul {
     padding: 0;
     margin: 0;
