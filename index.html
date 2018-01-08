@@ -11,41 +11,41 @@
         <ul id="menu-demo2">
             <li><a href="#">Paysage</a>
                 <ul>
-                    <li><a href="#"><span onclick="show_hidden('paysage');">Enneiger</span></a></li>
-                    <li onclick="javascript:show_hidden('P2');"><a href="#">Chaleureux</a></li>
-                    <li onclick="javascript:show_hidden('P3');"><a href="#">Sapins</a></li>
-                    <li onclick="javascript:show_hidden('P4');"><a href="#">Montagne</a></li>
+                    <li><div id="Enneiger" onclick="toggle_div(this,'im1');"><a href="#im1">Enneiger</a></div></li>
+                    <li><div id="Chaleureux" onclick="toggle_div(this,'im2');"><a href="#im2">Chaleureux</a></div></li>
+                    <li><div id="Sapins" onclick="toggle_div(this,'im3');"><a href="#im3">Sapins</a></div></li>
+                    <li><div id="Montagne" onclick="toggle_div(this,'im4');"><a href="#im4">Montagne</a></div></li>
                 </ul>
             </li>
             <li><a href="#">Noël</a>
                 <ul>
-                    <li onclick="javascript:show_hidden('N1');"><a href="#">Cadeau</a></li>
-                    <li onclick="javascript:show_hidden('N2');"><a href="#">Bûche de Noël</a></li>
-                    <li onclick="javascript:show_hidden('N3');"><a href="#">Père Noël</a></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Cadeau</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Bûche de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Père Noël</a></div></li>
                     <li><a href="#">...</a></li>
                 </ul>
             </li>
             <li><a href="#">Contes & Chants</a>
                 <ul>
-                    <li onclick="javascript:show_hidden('C1');"><a href="#">Histoire à écrire :)</a></li>
-                    <li onclick="javascript:show_hidden('C2');"><a href="#">Conte de Noël</a></li>
-                    <li onclick="javascript:show_hidden('C3');"><a href="#">Champs de Noël</a></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Histoire à écrire :)</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Conte de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Champs de Noël</a></div></li>
                     <li ><a href="#">...</a></li>
                 </ul>
             </li>
             <li><a href="#">Petits Jeux & Autres</a>
                 <ul>
-                    <li onclick="javascript:show_hidden('J1');"><a href="#">Liste de Noël</a></li>
-                    <li onclick="javascript:show_hidden('J2');"><a href="#">Compte à Rebours</a></li>
-                    <li onclick="javascript:show_hidden('J3');"><a href="#">Menu</a></li>
-                    <li onclick="javascript:show_hidden('J4');"><a href="#">Recettes de Noël</a></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Liste de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Compte à Rebours</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Menu</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Recettes de Noël</a></div></li>
                 </ul>
             </li>
         </ul>
     </header>
     <!--*************************La page d'accueil************************-->
     <body>
-        <div class="index">
+        <div id="index">
             <div class="cg">
                 <img src="#"><!--Mettre une image réduite--></a>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -71,7 +71,7 @@
             </div>
         </div>
     <!--******************** Les images 1 ***********************************-->
-    <div id="PE1" style="visibility: hidden;">
+    <div id="im1" style="display: none;">
         <img src="img/sapin.png" class="" title="Sapin">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -82,6 +82,7 @@
         <img src="<!--URL-->" class="" title="">
     </div>
     <!--******************** Les images 2 ***********************************-->
+    <div id="im2" style="display: none;">
         <img src="img/sapin.png" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -90,7 +91,9 @@
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
+    </div>
     <!--******************** Les images 3 ***********************************-->
+    <div id="im3" style="display: none;">
         <img src="img/sapin.png" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -99,7 +102,9 @@
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
+    </div>
     <!--******************** Les images 4 ***********************************-->
+    <div id="im4" style="display: none;">
         <img src="img/sapin.png" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -108,6 +113,7 @@
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
+    </div>
     <!--******************** Les Histoires 1 ***********************************-->
         <p><strong>Pourquoi offre t'on des cadeaux à noël ?</strong></p><hr>
         <p class="lsv">Cela est en rapport avec la religion. Cela peut sembler assez logique, car il s'agit d'une fête religieuse ! Revenons plus en détail dessus. À la naissance de l'Enfant Jésus le 25 décembre, trois rois mages, Gaspar, Balthazar et Melchior lui ont offert des cadeaux : de l'or, de l'encens et de la myrrhe (gomme résine aromatique fournie par le balsamier). Chacun d'eux représentait ce que le Christ deviendrait : l'or - le roi ; l'encens - un grand prêcheur ; la myrrhe - un guérisseur et un martyr.<br><br>
