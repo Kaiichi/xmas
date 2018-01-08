@@ -11,5 +11,8 @@ function toggle_div(bouton, id) {
         div.style.display = "none";
      
       }
-     
-    }
+    return true;
+}
+function close(bouton ,id) {
+    document.getElementById(id).style.display=="none";
+}
