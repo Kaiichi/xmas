@@ -11,25 +11,25 @@
         <ul id="menu-demo2">
             <li><a href="#">Paysage</a>
                 <ul>
-                    <li><div id="Enneiger" onclick="toggle_div(this,'im1');"><a href="#im1">Enneiger</a></div></li>
-                    <li><div id="Chaleureux" onclick="toggle_div(this,'im2');"><a href="#im2">Chaleureux</a></div></li>
-                    <li><div id="Sapins" onclick="toggle_div(this,'im3');"><a href="#im3">Sapins</a></div></li>
-                    <li><div id="Montagne" onclick="toggle_div(this,'im4');"><a href="#im4">Montagne</a></div></li>
+                    <li><div id="Enneiger" onclick="toggle_div(this,'im1');"><a href="#Enneiger">Enneiger</a></div></li>
+                    <li><div id="Chaleureux" onclick="toggle_div(this,'im2');"><a href="#Chaleureux">Chaleureux</a></div></li>
+                    <li><div id="Sapins" onclick="toggle_div(this,'im3');"><a href="#Sapins">Sapins</a></div></li>
+                    <li><div id="Montagne" onclick="toggle_div(this,'im4');"><a href="#Montagne">Montagne</a></div></li>
                 </ul>
             </li>
             <li><a href="#">Noël</a>
                 <ul>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Cadeau</a></div></li>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Bûche de Noël</a></div></li>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Père Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'history1');"><a href="#Cadeau">Cadeau</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'history2');"><a href="#Bûche_de_noël">Bûche de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'history3');"><a href="#Père_noël">Père Noël</a></div></li>
                     <li><a href="#">...</a></li>
                 </ul>
             </li>
             <li><a href="#">Contes & Chants</a>
                 <ul>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Histoire à écrire :)</a></div></li>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Conte de Noël</a></div></li>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Champs de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'conte1');"><a href="#Histoire_à_écrire">Histoire à écrire :)</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'conte2');"><a href="#Conte_de_Noël">Conte de Noël</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'conte3');"><a href="#Chant_de_noël">Chant de Noël</a></div></li>
                     <li ><a href="#">...</a></li>
                 </ul>
             </li>
@@ -37,7 +37,7 @@
                 <ul>
                     <li><div id="" onclick="toggle_div(this,'');"><a href="#">Liste de Noël</a></div></li>
                     <li><div id="" onclick="toggle_div(this,'');"><a href="#">Compte à Rebours</a></div></li>
-                    <li><div id="" onclick="toggle_div(this,'');"><a href="#">Menu</a></div></li>
+                    <li><div id="" onclick="toggle_div(this,'index');"><a href="#Home">Menu</a></div></li>
                     <li><div id="" onclick="toggle_div(this,'');"><a href="#">Recettes de Noël</a></div></li>
                 </ul>
             </li>
@@ -72,10 +72,9 @@
         </div>
     <!--******************** Les images 1 ***********************************-->
     <div id="im1" style="display:none;">
-        gbvoiezngboizehnboziengzehgiohzeioghzeiohgoizegioezhioghezpghzeoigezo
-        <img src="img/sapin.png" class="" style="margin: 10% 30%;" title="Sapin" id="sapin" onclick="pcitures(this,'sapin')">
-        <img src="img/Cerf.png" class="" style="margin: 10% 30%;" title="Cerf" id="cerf" onclick="pcitures(this,'cerf')">
-        <img src="img/Cadeaux.jpg" class="" style="margin: 10% 30%;" title="Cadeaux" id="cadeaux" onclick="pcitures(this,'cadeaux')">
+        <img src="img/sapin.png" class="" style="margin: 10% 10%;" title="Sapin" id="sapin" onclick="pcitures(this,'sapin')">
+        <img src="img/Cerf.png" class="" style="margin: 10% 10%;" title="Cerf" id="cerf" onclick="pcitures(this,'cerf')">
+        <img src="img/Cadeaux.jpg" class="" style="margin: 10% 10%;" title="Cadeaux" id="cadeaux" onclick="pcitures(this,'cadeaux')">
         <img src="" class="" title="">
         <img src="" class="" title="">
         <img src="" class="" title="">
@@ -268,6 +267,22 @@
                 Sans oublier un affectueux ${spanRemplacement('bisou')} !`;
             }
             show_hidden('paysage');
+
+            function toggle_div(bouton, id) {
+ 
+ var div = document.getElementById(id);
+
+ if(div.style.display=="none") {
+
+   div.style.display = "block";
+
+ } else {
+
+   div.style.display = "none";
+
+ }
+
+}
         </script>
     </body>
 </html>
