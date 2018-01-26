@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Merry Chrismas</title>
         <link type="text/css" rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="main.js" ></script>
     </head>
     <!--*****************************Le Menu déroulant**********************************-->
     <header>
@@ -71,10 +71,10 @@
             </div>
         </div>
     <!--******************** Les images 1 ***********************************-->
-    <div id="im1" style="display:none;">
-        <img src="img/sapin.png" class="" style="margin: 10% 10% 10% 10%;" title="Sapin" id="sapin" onclick="pcitures(this,'sapin')">
-        <img src="img/Cerf.png" class="" style="margin: 10% 10% 10% 10%;" title="Cerf" id="cerf" onclick="pcitures(this,'cerf')">
-        <img src="img/Cadeaux.jpg" class="" style="margin: 10% 10% 10% 10%;" title="Cadeaux" id="cadeaux" onclick="pcitures(this,'cadeaux')">
+    <div id="im1" style="display: none;">
+        <img src="img/sapin.png" class="" title="Sapin" id="sapin" >
+        <img src="img/Cerf.png" class="" title="Cerf" id="cerf" >
+        <img src="img/Cadeaux.jpg" class="" title="Cadeaux" id="cadeaux" >
         <img src="" class="" title="">
         <img src="" class="" title="">
         <img src="" class="" title="">
@@ -82,9 +82,9 @@
         <img src="" class="" title="">
     </div>
     <!--******************** Les images 2 ***********************************-->
-    <div id="im2" class="image" style="display: none;">
-        <img src="img/sapin.png" class="" title="">
-        <img src="<!--URL-->" class="" title="">
+    <div id="im2" style="display: none;">
+        <img src="img/Plaine en neige.jpg" class="" title="">
+        <img src="img/Paysages montagnes distorsion.jpg" class="" title=""> 
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -94,7 +94,7 @@
     </div>
     <!--******************** Les images 3 ***********************************-->
     <div id="im3" style="display: none;">
-        <img src="img/sapin.png" class="" title="">
+        <img src="img/cvbjkbjkjk.gif" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -105,8 +105,8 @@
     </div>
     <!--******************** Les images 4 ***********************************-->
     <div id="im4" style="display: none;">
-        <img src="img/sapin.png" class="" title="">
-        <img src="<!--URL-->" class="" title="">
+        <img src="img/aravis-mountain-range-form-les-gets-c-antbpvhotos.png" class="" title="">
+        <img src="img/aravis-mountain-range-form-les-gets-c-antbphotos.jpg.png" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
         <img src="<!--URL-->" class="" title="">
@@ -267,22 +267,6 @@
                 Sans oublier un affectueux ${spanRemplacement('bisou')} !`;
             }
             show_hidden('paysage');
-
-            function toggle_div(bouton, id) {
- 
-                var div = document.getElementById(id);
-
-                    if(div.style.display=="none") {
-
-                         div.style.display = "block";
-
-                    } else {
-
-                        div.style.display = "none";
-
-                }
-
-            }
         </script>
     </body>
 </html>

@@ -1,12 +1,15 @@
-function pictures(bouton, id) {
-    var img = document.getElementById(id);
+function toggle_div(bouton, id) {
+ 
+    var div = document.getElementById(id);
 
-    if (img.style.margin == "10% 30%").onclick {
+        if(div.style.display=="none") {
 
-        img.style.margin = "50% 30%";
+            div.style.display = "block";
+
+        } else {
+
+            div.style.display = "none";
+
     }
-    else {
-        img.style.margin = "10% 30%";
-    }
-    return true;
+
 }
